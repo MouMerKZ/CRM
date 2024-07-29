@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Главное меню</title>
+</head>
+<body>
+    <h1>Главное меню</h1>
+    <ul>
+        <li><a href="{% url 'patient_list' %}">Список пациентов</a></li>
+        <li><a href="{% url 'appointment_list' %}">Список встреч</a></li>
+        <li><a href="{% url 'doctor_list' %}">Врачи</a></li>
+        <li><a href="{% url 'finance_record_list' %}">Финансовые записи</a></li>
+        <!-- Добавьте другие ссылки по мере необходимости -->
+    </ul>
+</body>
+</html>

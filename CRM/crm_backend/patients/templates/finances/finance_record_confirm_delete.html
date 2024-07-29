@@ -1,0 +1,11 @@
+{% extends 'financial_record_list.html' %}
+
+{% block content %}
+<h2>Удалить финансовую запись</h2>
+<p>Вы уверены, что хотите удалить финансовую запись?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Да, удалить</button>
+    <a href="{% url 'finance_record_list' %}">Отмена</a>
+</form>
+{% endblock %}
